@@ -1,0 +1,10 @@
+
+<form style="margin-top: 30px;" [formGroup]="myForm">
+    <div>
+      <input formControlName="email" placeholder="Email">
+      <div *ngIf="myForm.controls.email.invalid && myForm.controls.email.touched">
+        {{ myForm.controls.email.errors | formControlErrorMessage: myForm.controls.email }}
+      </div>
+    </div>
+    <!-- Diğer form alanları burada eklenebilir -->
+  </form>

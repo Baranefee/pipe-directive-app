@@ -1,0 +1,9 @@
+
+
+<p>Bugünün Tarihi: {{ today | date:'fullDate' }}</p>
+
+<p>Orijinal Metin: {{ text }}</p>
+<p>Büyük Harf: {{ text | uppercase }}</p>
+<p>Küçük Harf: {{ text | lowercase }}</p>
+<p>Fiyat: {{ price | currency:'USD':true }}</p>
+<p>İlerleme: {{ progress | percent }}</p>
